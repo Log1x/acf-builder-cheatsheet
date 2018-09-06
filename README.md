@@ -482,7 +482,7 @@ $fields
 
 ## Miscellaneous
 
-## Google Map
+### Google Map
 ```php
 $fields 
     ->addGoogleMap('google_map_field', [
@@ -503,7 +503,7 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/google-map)
 
-## Date Picker 
+### Date Picker 
 ```php
 $fields 
     ->addDatePicker('date_picker_field', [
