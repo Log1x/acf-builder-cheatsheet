@@ -1,5 +1,38 @@
 # Field Types 
 
+* [Basic](#basic)
+  * [Text](#text)
+  * [Textarea](#textarea)
+  * [Number](#number)
+  * [Email](#email)
+  * [URL](#url)
+  * [Password](#password)
+* [Content](#content)
+  * [Wysiwyg](#wysiwyg)
+  * [Oembed](#oembed)
+  * [Image](#image)
+  * [File](#file)
+  * [Gallery](#gallery)
+* [Choice](#choice)
+  * [Select](#select)
+  * [Checkbox](#checkbox)
+  * [Radio](#radio)
+  * [True / False](#true--false)
+* [Relational](#relational)
+  * [Link](#link)
+  * [Post Object](#post-object)
+  * [Page Link](#page-link)
+  * [Relationship](#relationship)
+  * [Taxonomy](#taxonomy)
+  * [User](#user)
+* [Miscellaneous](#miscellaneous)
+  * [Google Map](#google-map)
+  * [Date Picker](#date-picker)
+  * [Date Time Picker](#date-time-picker)
+  * [Time Picker](#time-picker)
+  * [Color Picker](#color-picker)
+  * [Message](#message)
+
 ## Basic 
 
 ### Text 
