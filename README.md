@@ -4,17 +4,19 @@ This cheatsheet consists of ACF Field Type arguments for use with [ACF Builder](
 
 If you are new to ACF Builder and would like to learn more, you can read my guide [here](https://roots.io/guides/using-acf-builder-with-sage/).
 
-## Field Types
+## Table of Contents
 
-| [Basic](#basic) | [Content](#content) | [Choice](#choice) | [Relational](#relational) | [jQuery](#jquery) | [Layout](#layout) | [Configuration](#configuration) |
+| [Basic](#basic)       | [Content](#content) | [Choice](#choice)            | [Relational](#relational)     | [jQuery](#jquery)                     | [Layout](#layout)                     | [Configuration](#configuration)   |
 |-----------------------|---------------------|------------------------------|-------------------------------|---------------------------------------|---------------------------------------|-----------------------------------|
-| [Text](#text) | [Wysiwyg](#wysiwyg) | [Select](#select) | [Link](#link) | [Google Map](#google-map) | [Message](#message) | [Composing](#composing-fields) |
-| [Textarea](#textarea) | [Oembed](#oembed) | [Checkbox](#checkbox) | [Post Object](#post-object) | [Date Picker](#date-picker) | [Accordion](#accordion) | [Modifying](#modifying-fields) |
-| [Number](#number) | [Image](#image) | [Radio](#radio) | [Page Link](#page-link) | [Date Time Picker](#date-time-picker) | [Tab](#tab) | [Removing](#removing-fields) |
-| [URL](#url) | [File](#file) | [True / False](#true--false) | [Relationship](#relationship) | [Time Picker](#time-picker) | [Group](#group) | [Choices](#field-choices) |
-| [Password](#password) | [Gallery](#gallery) |  | [Taxonomy](#taxonomy) | [Color Picker](#color-picker) | [Repeater](#repeater) | [Conditions](#field-conditions) |
-|  |  |  | [User](#user) |  | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper) |
-|  |  |  |  |  |  | [Location](#field-group-location) |
+| [Text](#text)         | [Wysiwyg](#wysiwyg) | [Select](#select)            | [Link](#link)                 | [Google Map](#google-map)             | [Message](#message)                   | [Composing](#composing-fields)    |
+| [Textarea](#textarea) | [Oembed](#oembed)   | [Checkbox](#checkbox)        | [Post Object](#post-object)   | [Date Picker](#date-picker)           | [Accordion](#accordion)               | [Modifying](#modifying-fields)    |
+| [Number](#number)     | [Image](#image)     | [Radio](#radio)              | [Page Link](#page-link)       | [Date Time Picker](#date-time-picker) | [Tab](#tab)                           | [Removing](#removing-fields)      |
+| [URL](#url)           | [File](#file)       | [True / False](#true--false) | [Relationship](#relationship) | [Time Picker](#time-picker)           | [Group](#group)                       | [Choices](#field-choices)         |
+| [Password](#password) | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
+|                       |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
+|                       |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
+
+## Field Types
 
 ### Basic 
 
