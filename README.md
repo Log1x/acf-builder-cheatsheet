@@ -7,7 +7,7 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 ## Table of Contents
 
 | [Basic](#basic)       | [Content](#content) | [Choice](#choice)            | [Relational](#relational)     | [jQuery](#jquery)                     | [Layout](#layout)                     | [Configuration](#configuration)   |
-|-----------------------|---------------------|------------------------------|-------------------------------|---------------------------------------|---------------------------------------|-----------------------------------|
+|:----------------------|:--------------------|:-----------------------------|:------------------------------|:--------------------------------------|:--------------------------------------|:----------------------------------|
 | [Text](#text)         | [Wysiwyg](#wysiwyg) | [Select](#select)            | [Link](#link)                 | [Google Map](#google-map)             | [Message](#message)                   | [Composing](#composing-fields)    |
 | [Textarea](#textarea) | [Oembed](#oembed)   | [Checkbox](#checkbox)        | [Post Object](#post-object)   | [Date Picker](#date-picker)           | [Accordion](#accordion)               | [Modifying](#modifying-fields)    |
 | [Number](#number)     | [Image](#image)     | [Radio](#radio)              | [Page Link](#page-link)       | [Date Time Picker](#date-time-picker) | [Tab](#tab)                           | [Removing](#removing-fields)      |
