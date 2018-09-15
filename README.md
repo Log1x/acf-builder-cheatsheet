@@ -1,43 +1,26 @@
-# Field Types 
+# ACF Builder Cheatsheet
 
-* [Basic](#basic)
-  * [Text](#text)
-  * [Textarea](#textarea)
-  * [Number](#number)
-  * [Email](#email)
-  * [URL](#url)
-  * [Password](#password)
-* [Content](#content)
-  * [Wysiwyg](#wysiwyg)
-  * [Oembed](#oembed)
-  * [Image](#image)
-  * [File](#file)
-  * [Gallery](#gallery)
-* [Choice](#choice)
-  * [Select](#select)
-  * [Checkbox](#checkbox)
-  * [Radio](#radio)
-  * [True / False](#true--false)
-* [Relational](#relational)
-  * [Link](#link)
-  * [Post Object](#post-object)
-  * [Page Link](#page-link)
-  * [Relationship](#relationship)
-  * [Taxonomy](#taxonomy)
-  * [User](#user)
-* [Miscellaneous](#miscellaneous)
-  * [Google Map](#google-map)
-  * [Date Picker](#date-picker)
-  * [Date Time Picker](#date-time-picker)
-  * [Time Picker](#time-picker)
-  * [Color Picker](#color-picker)
-  * [Message](#message)
+This cheatsheet consists of ACF Field Type arguments for use with [ACF Builder](https://github.com/StoutLogic/acf-builder/) as well as the known (most of which are not documented) configuration methods to assist in building fields. While the below field types reveal all of the possible configuration passable in the field type config array, most have available chainable methods to assist in building out cleaner, more readable code.
 
-## Basic 
+If you are new to ACF Builder and would like to learn more, you can read my guide [here](https://roots.io/guides/using-acf-builder-with-sage/).
 
-### Text 
+## Field Types
+
+| [Basic](#basic)       	| [Content](#content) 	| [Choice](#choice)            	| [Relational](#relational)     	| [jQuery](#jquery)                     	| [Layout](#layout)                     	| [Configuration](#configuration)   	|
+|-----------------------	|---------------------	|------------------------------	|-------------------------------	|---------------------------------------	|---------------------------------------	|-----------------------------------	|
+| [Text](#text)         	| [Wysiwyg](#wysiwyg) 	| [Select](#select)            	| [Link](#link)                 	| [Google Map](#google-map)             	| [Message](#message)                   	| [Composing](#composing-fields)    	|
+| [Textarea](#textarea) 	| [Oembed](#oembed)   	| [Checkbox](#checkbox)        	| [Post Object](#post-object)   	| [Date Picker](#date-picker)           	| [Accordion](#accordion)               	| [Modifying](#modifying-fields)    	|
+| [Number](#number)     	| [Image](#image)     	| [Radio](#radio)              	| [Page Link](#page-link)       	| [Date Time Picker](#date-time-picker) 	| [Tab](#tab)                           	| [Removing](#removing-fields)      	|
+| [URL](#url)           	| [File](#file)       	| [True / False](#true--false) 	| [Relationship](#relationship) 	| [Time Picker](#time-picker)           	| [Group](#group)                       	| [Choices](#field-choices)         	|
+| [Password](#password) 	| [Gallery](#gallery) 	|                              	| [Taxonomy](#taxonomy)         	| [Color Picker](#color-picker)         	| [Repeater](#repeater)                 	| [Conditions](#field-conditions)   	|
+|                       	|                     	|                              	| [User](#user)                 	|                                       	| [Flexible Content](#flexible-content) 	| [Wrapper](#field-wrapper)         	|
+|                       	|                     	|                              	|                               	|                                       	|                                       	| [Location](#field-group-location) 	|
+
+### Basic 
+
+#### Text 
 ```php
-$fields
+$builder
     ->addText('text_field' [
         'label' => 'Text Field',
         'instructions' => '',
@@ -56,9 +39,9 @@ $fields
 ```
 [Official Documentation]( https://www.advancedcustomfields.com/resources/text)
 
-### Textarea 
+#### Textarea 
 ```php
-$fields 
+$builder 
   ->addTextarea('textarea_field', [
       'label' => 'Textarea Field',
       'instructions' => '',
@@ -77,9 +60,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/textarea)
 
-### Number 
+#### Number 
 ```php
-$fields 
+$builder 
     ->addNumber('number_Field', [
         'label' => 'Number Field',
         'instructions' => '',
@@ -100,9 +83,9 @@ $fields
   ]);
 ```
 
-### Email 
+#### Email 
 ```php
-$fields 
+$builder 
     ->addEmail('email_field', [
         'label' => 'Email Field',
         'instructions' => '',
@@ -120,9 +103,9 @@ $fields
     ]);
 ```
 
-### URL 
+#### URL 
 ```php 
-$fields
+$builder
     ->addUrl('url_field', [
         'label' => 'URL Field',
         'instructions' => '',
@@ -138,9 +121,9 @@ $fields
     ]);
 ```
 
-### Password 
+#### Password 
 ```php 
-$fields 
+$builder 
     ->addPassword('password_field', [
         'label' => 'Password Field',
         'instructions' => '',
@@ -157,11 +140,11 @@ $fields
     ]);
 ```
 
-## Content 
+### Content 
 
-### Wysiwyg 
+#### Wysiwyg 
 ```php
-$fields 
+$builder 
     ->addWysiwyg('wysiwyg_field', [
         'label' => 'WYSIWYG Field'
         'instructions' => '',
@@ -181,9 +164,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/wysiwyg)
 
-### Oembed
+#### Oembed
 ```php
-$fields 
+$builder 
     ->addOembed('oembed_field', [
         'label' => 'Oembed Field',
         'instructions' => '',
@@ -200,9 +183,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/oembed)
 
-### Image 
+#### Image 
 ```php 
-$fields
+$builder
     ->addImage('image_field', [
         'label' => 'Image FIeld',
         'instructions' => '',
@@ -227,9 +210,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/image)
 
-### File 
+#### File 
 ```php
-$fields 
+$builder 
     ->addFile('file_Field', [
         'label' => 'File Field',
         'instructions' => '',
@@ -249,9 +232,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/file)
 
-### Gallery 
+#### Gallery 
 ```php
-$fields 
+$builder 
     ->addGallery('gallery_field', [
         'label' => 'Gallery Field',
         'instructions' => '',
@@ -277,11 +260,11 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/gallery)
 
-## Choice 
+### Choice 
 
-### Select
+#### Select
 ```php 
-$fields 
+$builder 
     ->addSelect('select_field', [
         'label' => 'Select Field',
         'instructions' => '',
@@ -292,7 +275,6 @@ $fields
             'class' => '',
             'id' => '',
         ],
-        'choices' => [],
         'default_value' => [],
         'allow_null' => 0,
         'multiple' => 0,
@@ -304,9 +286,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/select)
 
-### Checkbox
+#### Checkbox
 ```php
-$fields
+$builder
     ->addCheckbox('checkbox_field', [
         'label' => 'Checkbox Field',
         'instructions' => '',
@@ -328,9 +310,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/checkbox)
 
-### Radio 
+#### Radio 
 ```php
-$fields 
+$builder 
     ->addRadio('radio_field', [
         'label' => 'Radio Field',
         'instructions' => '',
@@ -352,9 +334,31 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/radio-button)
 
-### True / False 
+#### Button Group
 ```php
-$fields 
+$builder
+    ->addButtonGroup('button_group_field', [
+        'label' => 'Button Group Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'choices' => [],
+        'allow_null' => 0,
+        'default_value' => '',
+        'layout' => 'horizontal',
+        'return_format' => 'value',
+    ]);
+```
+[Official Documentation](https://www.advancedcustomfields.com/resources/button-group/)
+
+#### True / False 
+```php
+$builder 
     ->addTrueFalse('truefalse_field', [
         'label' => 'True / False Field',
         'instructions' => '',
@@ -374,11 +378,11 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/true-false)
 
-## Relational 
+### Relational 
 
-### Link 
+#### Link 
 ```php 
-$fields 
+$builder 
     ->addLink('link_field', [
         'label' => 'Link Field',
         'instructions' => '',
@@ -394,9 +398,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/link)
 
-### Post Object 
+#### Post Object 
 ```php
-$fields 
+$builder 
     ->addPostObject('post_object_field', [
         'label' => 'Post Object Field',
         'instructions' => '',
@@ -417,9 +421,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/post-object/)
 
-### Page Link 
+#### Page Link 
 ```php
-$fields 
+$builder 
     ->addPageLink('page_link_field', [
         'label' => 'Page Link Field',
         'type' => 'page_link',
@@ -440,9 +444,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/page-link)
 
-### Relationship 
+#### Relationship 
 ```php
-$fields 
+$builder 
     ->addRelationship('relationship_field', [
         'label' => 'Relationship Field',
         'instructions' => '',
@@ -468,9 +472,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/relationship)
 
-### Taxonomy 
+#### Taxonomy 
 ```php
-$fields 
+$builder 
     ->addTaxonomy('taxonomy_field', [
         'label' => 'Taxonomy Field',
         'instructions' => '',
@@ -493,9 +497,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/taxonomy)
 
-### User 
+#### User 
 ```php
-$fields 
+$builder 
     ->addUser('user_field', [
         'label' => 'User Field',
         'instructions' => '',
@@ -513,11 +517,11 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/textarea)
 
-## Miscellaneous
+### jQuery
 
-### Google Map
+#### Google Map
 ```php
-$fields 
+$builder 
     ->addGoogleMap('google_map_field', [
         'label' => 'Google Map Field',
         'instructions' => '',
@@ -536,9 +540,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/google-map)
 
-### Date Picker 
+#### Date Picker 
 ```php
-$fields 
+$builder 
     ->addDatePicker('date_picker_field', [
         'label' => 'Date Picker Field',
         'instructions' => '',
@@ -556,9 +560,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/date-picker)
 
-### Date Time Picker
+#### Date Time Picker
 ```php
-$fields
+$builder
     ->addDateTimePicker('date_time_picker_field', [
         'label' => 'Date Time Picker Field',
         'instructions' => '',
@@ -573,9 +577,9 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/date-time-picker)
 
-### Time Picker 
+#### Time Picker 
 ```php
-$fields
+$builder
     ->addTimePicker('time_picker_field', [
         'label' => 'Time Picker Field',
         'instructions' => '',
@@ -591,9 +595,9 @@ $fields
     ]);
 ```
 
-### Color Picker 
+#### Color Picker 
 ```php
-$fields 
+$builder 
     ->addColorPicker('color_picker_field', [
         'label' => 'Color Picker Field',
         'instructions' => '',
@@ -609,9 +613,11 @@ $fields
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/textarea)
 
-### Message 
+### Layout
+
+#### Message 
 ```php 
-$fields 
+$builder 
     ->addMessage('message_field', [
         'label' => 'Message Field',
         'instructions' => '',
@@ -626,4 +632,202 @@ $fields
         'new_lines' => 'wpautop',
         'esc_html' => 0,
     ]);
+```
+
+#### Accordion
+```php
+$builder
+    ->addAccordion('accordion_field', [
+        'label' => 'Accordion Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'open' => 0,
+        'multi_expand' => 0,
+        'endpoint' => 0,
+    ]);
+
+$builder
+    ->addAccordion('accordion_field_end')->endpoint();
+```
+[Official Documentation](https://www.advancedcustomfields.com/resources/accordion/)
+
+#### Tab
+```php
+$builder 
+    ->addTab('tab_field', [
+        'label' => 'Tab Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'maxlength' => '',
+    ]);
+```
+[Official Documentation](https://www.advancedcustomfields.com/resources/tab/)
+
+#### Group
+```php
+$builder
+    ->addGroup('group_field', [
+        'label' => 'Group Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'layout' => 'block',
+        'sub_fields' => [],
+    ]);
+```
+[Official Documentation](https://www.advancedcustomfields.com/resources/group/)
+
+#### Repeater
+```php
+$builder
+    ->addRepeater('repeater_field', [
+        'label' => 'Repeater Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'collapsed' => '',
+        'min' => 0,
+        'max' => 0,
+        'layout' => 'table',
+        'button_label' => '',
+        'sub_fields' => [],  
+    ]);
+```
+[Official Documentation](https://www.advancedcustomfields.com/resources/repeater/)
+
+#### Flexible Content
+```php
+$builder
+    ->addFlexibleContent('flexible_content_field', [
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'button_label' => 'Add Row',
+        'min' => '',
+        'max' => '',
+    ]);
+
+$builder
+    ->addLayout('layout', [
+        'label' => 'Layout',
+        'display' => 'block',
+        'sub_fields' => [],
+        'min' => '',
+        'max' => '',
+    ]);
+
+$builder
+    ->addLayouts(new FieldsBuilder());
+```
+[Official Documentation](https://www.advancedcustomfields.com/resources/flexible-content/)
+
+## Configuration
+
+
+### Composing Fields
+```php
+$builder
+    ->addFields(new FieldsBuilder());
+
+$builder
+    ->addField('text', 'title')
+        ->setKey('field_title')
+        ->setDefaultValue('My Title')
+        ->setInstructions('This is a title.')
+        ->setRequired()
+            ->setUnrequired()
+        ->setConfig('placeholder' => 'Enter the title')
+  ```
+
+### Modifying Fields
+```php
+$builder
+    ->modifyField('title', ['label' => 'Modified Title']);
+
+$builder
+    ->addFields(new FieldsBuilder())
+        ->getField('title')
+            ->modifyField('title', ['label' => 'Modified Title']);
+```
+
+### Removing Fields
+```php
+$builder
+    ->removeField('title');
+```
+
+### Field Choices 
+```php
+$builder
+    ->addChoice('red')
+    ->addChoice('blue')
+    ->addChoice('green');
+
+$builder
+    ->addChoices(['red' => 'Red'], ['blue' => 'Blue'], ['green' => 'Green']);
+```
+
+### Field Conditions
+```php
+$builder
+    ->conditional('true_false', '==', '0')
+        ->and('true_false', '!=', '1')
+        ->or('false_true', '==', '1');
+```
+
+### Field Wrapper
+```php
+$builder
+    ->setWidth('30');
+
+$builder
+    ->setSelector('.field')
+    ->setSelector('#field');
+
+$builder
+    ->setAttr('width', '30')
+    ->setAttr('class', 'field')
+    ->setAttr('id', 'field');
+
+$builder
+    ->setWrapper(['width' => '30', 'class' => 'field', 'id' => 'field']);
+```
+
+### Field Group Location
+
+```php
+$builder
+    ->setLocation('post_type', '==', 'page')
+        ->and('page_type', '==', 'front_page');
 ```
