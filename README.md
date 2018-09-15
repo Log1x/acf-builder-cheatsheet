@@ -769,7 +769,7 @@ $builder
         ->setInstructions('This is a title.')
         ->setRequired()
             ->setUnrequired()
-        ->setConfig('placeholder' => 'Enter the title')
+        ->setConfig('placeholder' => 'Enter the title');
   ```
 
 ### Modifying Fields
