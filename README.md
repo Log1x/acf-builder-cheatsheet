@@ -11,9 +11,9 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 | [Text](#text)         | [Wysiwyg](#wysiwyg) | [Select](#select)            | [Link](#link)                 | [Google Map](#google-map)             | [Message](#message)                   | [Composing](#composing-fields)    |
 | [Textarea](#textarea) | [Oembed](#oembed)   | [Checkbox](#checkbox)        | [Post Object](#post-object)   | [Date Picker](#date-picker)           | [Accordion](#accordion)               | [Modifying](#modifying-fields)    |
 | [Number](#number)     | [Image](#image)     | [Radio](#radio)              | [Page Link](#page-link)       | [Date Time Picker](#date-time-picker) | [Tab](#tab)                           | [Removing](#removing-fields)      |
-| [URL](#url)           | [File](#file)       | [True / False](#true--false) | [Relationship](#relationship) | [Time Picker](#time-picker)           | [Group](#group)                       | [Choices](#field-choices)         |
-| [Password](#password) | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
-|                       |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
+| [Range](#range)       | [File](#file)       | [True / False](#true--false) | [Relationship](#relationship) | [Time Picker](#time-picker)           | [Group](#group)                       | [Choices](#field-choices)         |
+| [URL](#url)           | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
+| [Password](#password) |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
 |                       |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
 
 ## Field Types
@@ -83,6 +83,28 @@ $builder
         'max' => '',
         'step' => '',
   ]);
+```
+
+#### Range 
+```php
+$builder
+    ->addRange('range_field', [
+        'label' => 'Range Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'default_value' => '',
+        'min' => '',
+        'max' => '',
+        'step' => '',
+        'prepend' => '',
+        'append' => '',
+    ]);
 ```
 
 #### Email 
