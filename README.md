@@ -18,9 +18,9 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 
 ## Field Types
 
-### Basic 
+### Basic
 
-#### Text 
+#### Text
 ```php
 $builder
     ->addText('text_field' [
@@ -41,9 +41,9 @@ $builder
 ```
 [Official Documentation]( https://www.advancedcustomfields.com/resources/text)
 
-#### Textarea 
+#### Textarea
 ```php
-$builder 
+$builder
   ->addTextarea('textarea_field', [
       'label' => 'Textarea Field',
       'instructions' => '',
@@ -62,9 +62,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/textarea)
 
-#### Number 
+#### Number
 ```php
-$builder 
+$builder
     ->addNumber('number_Field', [
         'label' => 'Number Field',
         'instructions' => '',
@@ -85,7 +85,7 @@ $builder
   ]);
 ```
 
-#### Range 
+#### Range
 ```php
 $builder
     ->addRange('range_field', [
@@ -107,9 +107,9 @@ $builder
     ]);
 ```
 
-#### Email 
+#### Email
 ```php
-$builder 
+$builder
     ->addEmail('email_field', [
         'label' => 'Email Field',
         'instructions' => '',
@@ -127,8 +127,8 @@ $builder
     ]);
 ```
 
-#### URL 
-```php 
+#### URL
+```php
 $builder
     ->addUrl('url_field', [
         'label' => 'URL Field',
@@ -145,9 +145,9 @@ $builder
     ]);
 ```
 
-#### Password 
-```php 
-$builder 
+#### Password
+```php
+$builder
     ->addPassword('password_field', [
         'label' => 'Password Field',
         'instructions' => '',
@@ -164,11 +164,11 @@ $builder
     ]);
 ```
 
-### Content 
+### Content
 
-#### Wysiwyg 
+#### Wysiwyg
 ```php
-$builder 
+$builder
     ->addWysiwyg('wysiwyg_field', [
         'label' => 'WYSIWYG Field'
         'instructions' => '',
@@ -190,7 +190,7 @@ $builder
 
 #### Oembed
 ```php
-$builder 
+$builder
     ->addOembed('oembed_field', [
         'label' => 'Oembed Field',
         'instructions' => '',
@@ -207,8 +207,8 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/oembed)
 
-#### Image 
-```php 
+#### Image
+```php
 $builder
     ->addImage('image_field', [
         'label' => 'Image FIeld',
@@ -234,9 +234,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/image)
 
-#### File 
+#### File
 ```php
-$builder 
+$builder
     ->addFile('file_Field', [
         'label' => 'File Field',
         'instructions' => '',
@@ -256,9 +256,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/file)
 
-#### Gallery 
+#### Gallery
 ```php
-$builder 
+$builder
     ->addGallery('gallery_field', [
         'label' => 'Gallery Field',
         'instructions' => '',
@@ -284,11 +284,11 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/gallery)
 
-### Choice 
+### Choice
 
 #### Select
-```php 
-$builder 
+```php
+$builder
     ->addSelect('select_field', [
         'label' => 'Select Field',
         'instructions' => '',
@@ -305,7 +305,7 @@ $builder
         'ui' => 0,
         'ajax' => 0,
         'return_format' => 'value',
-        'placeholder' => '',  
+        'placeholder' => '',
     ]);
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/select)
@@ -334,9 +334,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/checkbox)
 
-#### Radio 
+#### Radio
 ```php
-$builder 
+$builder
     ->addRadio('radio_field', [
         'label' => 'Radio Field',
         'instructions' => '',
@@ -380,9 +380,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/button-group/)
 
-#### True / False 
+#### True / False
 ```php
-$builder 
+$builder
     ->addTrueFalse('truefalse_field', [
         'label' => 'True / False Field',
         'instructions' => '',
@@ -402,11 +402,11 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/true-false)
 
-### Relational 
+### Relational
 
-#### Link 
-```php 
-$builder 
+#### Link
+```php
+$builder
     ->addLink('link_field', [
         'label' => 'Link Field',
         'instructions' => '',
@@ -422,9 +422,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/link)
 
-#### Post Object 
+#### Post Object
 ```php
-$builder 
+$builder
     ->addPostObject('post_object_field', [
         'label' => 'Post Object Field',
         'instructions' => '',
@@ -445,9 +445,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/post-object/)
 
-#### Page Link 
+#### Page Link
 ```php
-$builder 
+$builder
     ->addPageLink('page_link_field', [
         'label' => 'Page Link Field',
         'type' => 'page_link',
@@ -468,9 +468,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/page-link)
 
-#### Relationship 
+#### Relationship
 ```php
-$builder 
+$builder
     ->addRelationship('relationship_field', [
         'label' => 'Relationship Field',
         'instructions' => '',
@@ -496,9 +496,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/relationship)
 
-#### Taxonomy 
+#### Taxonomy
 ```php
-$builder 
+$builder
     ->addTaxonomy('taxonomy_field', [
         'label' => 'Taxonomy Field',
         'instructions' => '',
@@ -521,9 +521,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/taxonomy)
 
-#### User 
+#### User
 ```php
-$builder 
+$builder
     ->addUser('user_field', [
         'label' => 'User Field',
         'instructions' => '',
@@ -545,7 +545,7 @@ $builder
 
 #### Google Map
 ```php
-$builder 
+$builder
     ->addGoogleMap('google_map_field', [
         'label' => 'Google Map Field',
         'instructions' => '',
@@ -564,9 +564,9 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/google-map)
 
-#### Date Picker 
+#### Date Picker
 ```php
-$builder 
+$builder
     ->addDatePicker('date_picker_field', [
         'label' => 'Date Picker Field',
         'instructions' => '',
@@ -601,7 +601,7 @@ $builder
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/date-time-picker)
 
-#### Time Picker 
+#### Time Picker
 ```php
 $builder
     ->addTimePicker('time_picker_field', [
@@ -619,9 +619,9 @@ $builder
     ]);
 ```
 
-#### Color Picker 
+#### Color Picker
 ```php
-$builder 
+$builder
     ->addColorPicker('color_picker_field', [
         'label' => 'Color Picker Field',
         'instructions' => '',
@@ -639,9 +639,9 @@ $builder
 
 ### Layout
 
-#### Message 
-```php 
-$builder 
+#### Message
+```php
+$builder
     ->addMessage('message_field', [
         'label' => 'Message Field',
         'instructions' => '',
@@ -683,7 +683,7 @@ $builder
 
 #### Tab
 ```php
-$builder 
+$builder
     ->addTab('tab_field', [
         'label' => 'Tab Field',
         'instructions' => '',
@@ -740,7 +740,7 @@ $builder
         'max' => 0,
         'layout' => 'table',
         'button_label' => '',
-        'sub_fields' => [],  
+        'sub_fields' => [],
     ]);
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/repeater/)
@@ -772,7 +772,7 @@ $builder
     ]);
 
 $builder
-    ->addLayouts(new FieldsBuilder());
+    ->addLayout(new FieldsBuilder());
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/flexible-content/)
 
@@ -811,7 +811,7 @@ $builder
     ->removeField('title');
 ```
 
-### Field Choices 
+### Field Choices
 ```php
 $builder
     ->addChoice('red')
