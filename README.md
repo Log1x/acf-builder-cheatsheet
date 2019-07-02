@@ -23,7 +23,7 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 #### Text
 ```php
 $builder
-    ->addText('text_field' [
+    ->addText('text_field', [
         'label' => 'Text Field',
         'instructions' => '',
         'required' => 0,
