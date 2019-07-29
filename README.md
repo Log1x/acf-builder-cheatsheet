@@ -299,6 +299,7 @@ $builder
             'class' => '',
             'id' => '',
         ],
+        'choices' => [],
         'default_value' => [],
         'allow_null' => 0,
         'multiple' => 0,
