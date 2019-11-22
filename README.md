@@ -69,7 +69,7 @@ $builder
         'label' => 'Number Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -92,7 +92,7 @@ $builder
         'label' => 'Range Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
@@ -114,7 +114,7 @@ $builder
         'label' => 'Email Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -134,7 +134,7 @@ $builder
         'label' => 'URL Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -152,7 +152,7 @@ $builder
         'label' => 'Password Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -173,7 +173,7 @@ $builder
         'label' => 'WYSIWYG Field'
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -195,7 +195,7 @@ $builder
         'label' => 'Oembed Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -214,7 +214,7 @@ $builder
         'label' => 'Image FIeld',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -241,7 +241,7 @@ $builder
         'label' => 'File Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -263,7 +263,7 @@ $builder
         'label' => 'Gallery Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -293,7 +293,7 @@ $builder
         'label' => 'Select Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -318,7 +318,7 @@ $builder
         'label' => 'Checkbox Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -342,7 +342,7 @@ $builder
         'label' => 'Radio Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -366,7 +366,7 @@ $builder
         'label' => 'Button Group Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
@@ -388,7 +388,7 @@ $builder
         'label' => 'True / False Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -412,7 +412,7 @@ $builder
         'label' => 'Link Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -430,7 +430,7 @@ $builder
         'label' => 'Post Object Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -454,7 +454,7 @@ $builder
         'type' => 'page_link',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -476,7 +476,7 @@ $builder
         'label' => 'Relationship Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -504,7 +504,7 @@ $builder
         'label' => 'Taxonomy Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -529,7 +529,7 @@ $builder
         'label' => 'User Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -551,7 +551,7 @@ $builder
         'label' => 'Google Map Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -572,7 +572,7 @@ $builder
         'label' => 'Date Picker Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -592,7 +592,7 @@ $builder
         'label' => 'Date Time Picker Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -609,7 +609,7 @@ $builder
         'label' => 'Time Picker Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -627,7 +627,7 @@ $builder
         'label' => 'Color Picker Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -647,7 +647,7 @@ $builder
         'label' => 'Message Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
             'width' => '',
             'class' => '',
@@ -666,7 +666,7 @@ $builder
         'label' => 'Accordion Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
@@ -689,7 +689,7 @@ $builder
         'label' => 'Tab Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
@@ -711,7 +711,7 @@ $builder
         'label' => 'Group Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
@@ -730,7 +730,7 @@ $builder
         'label' => 'Repeater Field',
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
@@ -752,7 +752,7 @@ $builder
     ->addFlexibleContent('flexible_content_field', [
         'instructions' => '',
         'required' => 0,
-        'conditional_logic' => 0,
+        'conditional_logic' => [],
         'wrapper' => [
           'width' => '',
           'class' => '',
