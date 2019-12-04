@@ -170,7 +170,7 @@ $builder
 ```php
 $builder
     ->addWysiwyg('wysiwyg_field', [
-        'label' => 'WYSIWYG Field'
+        'label' => 'WYSIWYG Field',
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => [],
