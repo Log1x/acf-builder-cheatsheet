@@ -788,7 +788,8 @@ $builder
 $builder
     ->addField('text', 'title')
         ->setKey('field_title')
-        ->setDefaultValue('My Title')
+        ->setLabel('My Label')
+        ->setDefaultValue('Lorem ipsum')
         ->setInstructions('This is a title.')
         ->setRequired()
             ->setUnrequired()
