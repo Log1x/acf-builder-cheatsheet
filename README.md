@@ -619,6 +619,7 @@ $builder
         'return_format' => 'g:i a',
     ]);
 ```
+[Official Documentation](https://www.advancedcustomfields.com/resources/time-picker)
 
 #### Color Picker
 ```php
