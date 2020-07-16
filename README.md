@@ -57,7 +57,7 @@ $builder
       'placeholder' => '',
       'maxlength' => '',
       'rows' => '',
-      'new_lines' => '',
+      'new_lines' => '', // Possible values are 'wpautop', 'br', or ''.
   ]);
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/textarea)
