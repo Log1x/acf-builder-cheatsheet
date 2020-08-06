@@ -858,3 +858,11 @@ $builder
     ->setLocation('post_type', '==', 'page')
         ->and('page_type', '==', 'front_page');
 ```
+
+#### Field Group Locations
+
+* **Post**: `post_type`, `post_type_list`, `post_type_archive`, `post_template`, `post_status`, `post_format`, `post_category`, `post_taxonomy`, `post`
+* **Page**: `page_template`, `page_type`, `page_parent`, `page`
+* **User**: `current_user`, `current_user_role`, `user_form`, `user_role`
+* **Forms**: `taxonomy`, `taxonomy_list`, `attachment`, `comment`, `widget`, `nav_menu`, `nav_menu_item`, `block`, `options_page`
+* **Custom**: [Official Documentation](https://www.advancedcustomfields.com/resources/custom-location-rules/)
