@@ -15,7 +15,7 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 | [URL](#url)           | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
 | [Password](#password) |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
 |                       |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
-
+|                       |                     |                              |                               |                                       |                                       | [Position](#field-group-position) |
 ## Field Types
 
 ### Basic
@@ -780,7 +780,6 @@ $builder
 
 ## Configuration
 
-
 ### Composing Fields
 ```php
 $builder
@@ -866,3 +865,8 @@ $builder
 * **User**: `current_user`, `current_user_role`, `user_form`, `user_role`
 * **Forms**: `taxonomy`, `taxonomy_list`, `attachment`, `comment`, `widget`, `nav_menu`, `nav_menu_item`, `block`, `options_page`
 * **Custom**: [Official Documentation](https://www.advancedcustomfields.com/resources/custom-location-rules/)
+
+### Field Group Position
+```php
+$builder = new FieldsBuilder('banner', ['position' => 'side']); // acf_after_title, normal, side
+```
