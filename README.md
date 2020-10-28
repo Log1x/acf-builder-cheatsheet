@@ -269,6 +269,7 @@ $builder
             'class' => '',
             'id' => '',
         ],
+        'return_format' => 'array',
         'min' => '',
         'max' => '',
         'insert' => 'append',
