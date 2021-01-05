@@ -16,6 +16,7 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 | [Password](#password) |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
 |                       |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
 |                       |                     |                              |                               |                                       |                                       | [Position](#field-group-position) |
+
 ## Field Types
 
 ### Basic
