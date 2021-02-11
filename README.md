@@ -15,7 +15,8 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 | [URL](#url)           | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
 | [Password](#password) |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
 |                       |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
-|                       |                     |                              |                               |                                       |                                       | [Position](#field-group-position) |
+| [Custom / 3rd Party](#composing-custom3rd-party-addon-fields) |    |       |                               |                                       |                                       | [Position](#field-group-position) |
+
 ## Field Types
 
 ### Basic
@@ -796,6 +797,20 @@ $builder
             ->setUnrequired()
         ->setConfig('placeholder' => 'Enter the title');
   ```
+
+### Composing Custom/3rd Party Addon Fields
+
+Add any other registered custom/[3rd party ACF Fields](https://www.advancedcustomfields.com/add-ons/) using the `addField($name, $type, $args)` method.
+
+```php
+$builder
+    ->addFields(new FieldsBuilder());
+
+$builder
+    ->addField('icon', 'font-awesome')
+        ->setLabel('My Icon')
+        ->setInstructions('Select an icon')
+        ->setConfig('save_format' => 'class')
 
 ### Modifying Fields
 ```php
