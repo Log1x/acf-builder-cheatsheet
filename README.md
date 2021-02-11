@@ -619,6 +619,7 @@ $builder
         ],
         'display_format' => 'g:i a',
         'return_format' => 'g:i a',
+        'default_value' => '',
     ]);
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/time-picker)
