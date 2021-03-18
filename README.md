@@ -796,7 +796,7 @@ $builder
         ->setInstructions('This is a title.')
         ->setRequired()
             ->setUnrequired()
-        ->setConfig('placeholder' => 'Enter the title');
+        ->setConfig('placeholder', 'Enter the title');
   ```
 
 ### Composing Custom/3rd Party Addon Fields
@@ -811,7 +811,7 @@ $builder
     ->addField('icon', 'font-awesome')
         ->setLabel('My Icon')
         ->setInstructions('Select an icon')
-        ->setConfig('save_format' => 'class')
+        ->setConfig('save_format', 'class')
 
 ### Modifying Fields
 ```php
