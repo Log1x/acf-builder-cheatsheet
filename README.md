@@ -658,7 +658,7 @@ $builder
             'id' => '',
         ],
         'message' => '',
-        'new_lines' => 'wpautop', // 'wpautop', 'br', '' no formmatting
+        'new_lines' => 'wpautop', // 'wpautop', 'br', '' no formatting
         'esc_html' => 0,
     ]);
 ```
