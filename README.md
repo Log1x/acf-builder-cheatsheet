@@ -647,7 +647,7 @@ $builder
 #### Message
 ```php
 $builder
-    ->addMessage('message_field', [
+    ->addMessage('message_field', 'message', [
         'label' => 'Message Field',
         'instructions' => '',
         'required' => 0,
@@ -658,7 +658,7 @@ $builder
             'id' => '',
         ],
         'message' => '',
-        'new_lines' => 'wpautop',
+        'new_lines' => 'wpautop', // 'wpautop', 'br', '' no formmatting
         'esc_html' => 0,
     ]);
 ```
