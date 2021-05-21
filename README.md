@@ -212,7 +212,7 @@ $builder
 ```php
 $builder
     ->addImage('image_field', [
-        'label' => 'Image FIeld',
+        'label' => 'Image Field',
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => [],
