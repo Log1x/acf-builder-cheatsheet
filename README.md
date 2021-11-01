@@ -812,6 +812,7 @@ $builder
         ->setLabel('My Icon')
         ->setInstructions('Select an icon')
         ->setConfig('save_format', 'class')
+```
 
 ### Modifying Fields
 ```php
