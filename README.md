@@ -19,6 +19,8 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 
 ## Field Types
 
+You can find a full reference of available settings on the [official ACF documentation](https://www.advancedcustomfields.com/resources/register-fields-via-php/#field-type%20settings).
+
 ### Basic
 
 #### Text
