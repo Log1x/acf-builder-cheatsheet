@@ -12,9 +12,9 @@ If you are new to ACF Builder and would like to learn more, you can read my guid
 | [Textarea](#textarea) | [Oembed](#oembed)   | [Checkbox](#checkbox)        | [Post Object](#post-object)   | [Date Picker](#date-picker)           | [Accordion](#accordion)               | [Modifying](#modifying-fields)    |
 | [Number](#number)     | [Image](#image)     | [Radio](#radio)              | [Page Link](#page-link)       | [Date Time Picker](#date-time-picker) | [Tab](#tab)                           | [Removing](#removing-fields)      |
 | [Range](#range)       | [File](#file)       | [True / False](#true--false) | [Relationship](#relationship) | [Time Picker](#time-picker)           | [Group](#group)                       | [Choices](#field-choices)         |
-| [URL](#url)           | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
-| [Password](#password) |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
-|                       |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
+| [Email](#email)       | [Gallery](#gallery) |                              | [Taxonomy](#taxonomy)         | [Color Picker](#color-picker)         | [Repeater](#repeater)                 | [Conditions](#field-conditions)   |
+| [URL](#url)           |                     |                              | [User](#user)                 |                                       | [Flexible Content](#flexible-content) | [Wrapper](#field-wrapper)         |
+| [Password](#password) |                     |                              |                               |                                       |                                       | [Location](#field-group-location) |
 | [Custom / 3rd Party](#composing-custom3rd-party-addon-fields) |    |       |                               |                                       |                                       | [Position](#field-group-position) |
 
 ## Field Types
