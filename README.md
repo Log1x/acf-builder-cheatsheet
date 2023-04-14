@@ -706,6 +706,7 @@ $builder
         'prepend' => '',
         'append' => '',
         'maxlength' => '',
+        'placement' => '',
     ]);
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/tab/)
