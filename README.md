@@ -724,9 +724,10 @@ $builder
           'class' => '',
           'id' => '',
         ],
-        'layout' => 'block',
-        'sub_fields' => [],
-    ]);
+        'layout' => 'block'
+    ])
+        ->addText('sub_field')
+    ->endGroup();
 ```
 [Official Documentation](https://www.advancedcustomfields.com/resources/group/)
 
