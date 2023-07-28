@@ -634,6 +634,8 @@ $builder
         'instructions' => '',
         'required' => 0,
         'conditional_logic' => [],
+        'enable_opacity' => 0,
+        'return_format' => 'string',
         'wrapper' => [
             'width' => '',
             'class' => '',
