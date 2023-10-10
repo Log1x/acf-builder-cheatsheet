@@ -884,11 +884,228 @@ $builder
 
 #### Field Group Locations
 
-* **Post**: `post_type`, `post_type_list`, `post_type_archive`, `post_template`, `post_status`, `post_format`, `post_category`, `post_taxonomy`, `post`
-* **Page**: `page_template`, `page_type`, `page_parent`, `page`
-* **User**: `current_user`, `current_user_role`, `user_form`, `user_role`
-* **Forms**: `taxonomy`, `taxonomy_list`, `attachment`, `comment`, `widget`, `nav_menu`, `nav_menu_item`, `block`, `options_page`
-* **Custom**: [Official Documentation](https://www.advancedcustomfields.com/resources/custom-location-rules/)
+The following section is organized like this
+* [rule type]
+    * [possible values]
+ 
+or when values are grouped
+
+* [rule type]
+    * [group]
+        * [possible values]
+
+##### Post
+
+* **`post_type`**
+    * `post`
+    * \[slug for custom posttypes\]
+* **`post_template`**
+    * `default`
+    * \[template file name\]
+* **`post_status`**
+    * `publish`
+    * `pending`
+    * `draft`
+* **`post_format`**
+    * `standard`
+    * `aside`
+    * `chat`
+    * `gallery`
+    * `link`
+    * `image`
+    * `quote`
+    * `status`
+    * `video`
+    * `audio`
+* **`post_category`**
+    * `category:uncategorized`
+* **`post_taxonomy`**
+    * `category:uncategorized`
+    * `post_tag:[tag slug]`
+    * `[taxonomy slug]:[value slug]`
+
+##### Page
+
+* **`page_template`**
+    * `default`
+    * `[template file name]`
+* **`page_type`**
+    * `front_page`
+    * `posts_page`
+    * `top_level`
+    * `parent`
+    * `child`
+* **`page_parent`**
+    * `[page ID]`
+* **`page`**
+    * `[page ID]`
+
+##### User
+
+* **`current_user`**
+	* `logged_in`
+	* `viewing_front`
+	* `viewing_back`
+* **`current_user_role`**
+	* `administrator`
+	* `editor`
+	* `author`
+	* `contributor`
+	* `subscriber`
+* **`user_form`**
+	* `all`
+	* `add`
+	* `edit`
+	* `register`
+* **`user_role`**
+	* `administrator`
+	* `editor`
+	* `author`
+	* `contributor`
+	* `subscriber`
+##### Forms
+* **`taxonomy`**
+    * `all`
+    * `category`
+    * `post_tag`
+    * `post_format`
+    * `genre`
+* **`attachement`**
+    * `image`
+        * `image (all image)`
+        * `image/jpeg`
+        * `image/gif`
+        * `image/png`
+        * `image/bmp`
+        * `image/tiff`
+        * `image/webp`
+        * `image/x-icon`
+        * `image/heic`
+    * `video`
+        * `video (all video)`
+        * `video/x-ms-asf`
+        * `video/x-ms-wmv`
+        * `video/x-ms-wmx`
+        * `video/x-ms-wm`
+        * `video/avi`
+        * `video/divx`
+        * `video/x-flv`
+        * `video/quicktime`
+        * `video/mpeg`
+        * `video/mp4`
+        * `video/ogg`
+        * `video/webm`
+        * `video/x-matroska`
+        * `video/3gpp`
+        * `video/3gpp2`
+    * `text`
+        * `text (all text)`
+        * `text/plain`
+        * `text/csv`
+        * `text/tab-separated-values`
+        * `text/calendar`
+        * `text/richtext`
+        * `text/css`
+        * `text/html`
+        * `text/vtt`
+    * `application`
+        * `application (all application)`
+        * `application/ttaf+xml`
+        * `application/rtf`
+        * `application/javascript`
+        * `application/pdf`
+        * `application/java`
+        * `application/x-tar`
+        * `application/zip`
+        * `application/x-gzip`
+        * `application/rar`
+        * `application/x-7z-compressed`
+        * `application/octet-stream`
+        * `application/msword`
+        * `application/vnd.ms-powerpoint`
+        * `application/vnd.ms-write`
+        * `application/vnd.ms-excel`
+        * `application/vnd.ms-access`
+        * `application/vnd.ms-project`
+        * `application/vnd.openxmlformats-officedocument.wordprocessingml.document`
+        * `application/vnd.ms-word.document.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.wordprocessingml.template`
+        * `application/vnd.ms-word.template.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`
+        * `application/vnd.ms-excel.sheet.macroEnabled.12`
+        * `application/vnd.ms-excel.sheet.binary.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.spreadsheetml.template`
+        * `application/vnd.ms-excel.template.macroEnabled.12`
+        * `application/vnd.ms-excel.addin.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.presentationml.presentation`
+        * `application/vnd.ms-powerpoint.presentation.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.presentationml.slideshow`
+        * `application/vnd.ms-powerpoint.slideshow.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.presentationml.template`
+        * `application/vnd.ms-powerpoint.template.macroEnabled.12`
+        * `application/vnd.ms-powerpoint.addin.macroEnabled.12`
+        * `application/vnd.openxmlformats-officedocument.presentationml.slide`
+        * `application/vnd.ms-powerpoint.slide.macroEnabled.12`
+        * `application/onenote`
+        * `application/oxps`
+        * `application/vnd.ms-xpsdocument`
+        * `application/vnd.oasis.opendocument.text`
+        * `application/vnd.oasis.opendocument.presentation`
+        * `application/vnd.oasis.opendocument.spreadsheet`
+        * `application/vnd.oasis.opendocument.graphics`
+        * `application/vnd.oasis.opendocument.chart`
+        * `application/vnd.oasis.opendocument.database`
+        * `application/vnd.oasis.opendocument.formula`
+        * `application/wordperfect`
+        * `application/vnd.apple.keynote`
+        * `application/vnd.apple.numbers`
+        * `application/vnd.apple.pages`
+    * `audio`
+        * `audio (all audio)`
+        * `audio/mpeg`
+        * `audio/aac`
+        * `audio/x-realaudio`
+        * `audio/wav`
+        * `audio/ogg`
+        * `audio/flac`
+        * `audio/midi`
+        * `audio/x-ms-wma`
+        * `audio/x-ms-wax`
+        * `audio/x-matroska`
+* **`comment`**
+    * `all`
+    * [post types]
+* **`widget`**
+    * `all`
+    * `pages`
+    * `calendar`
+    * `archives`
+    * `media_audio`
+    * `media_image`
+    * `media_gallery`
+    * `media_video`
+    * `meta`
+    * `search`
+    * `text`
+    * `categories`
+    * `recent-posts`
+    * `recent-comments`
+    * `rss`
+    * `tag_cloud`
+    * `nav_menu`
+    * `custom_html`
+    * `block`
+* **`nav_menu`**
+* **`nav_menu_item`**
+* **`block`**
+* **`options_page`**
+
+##### Custom 
+
+[Official Documentation](https://www.advancedcustomfields.com/resources/custom-location-rules/)
+
+
+
 
 ### Field Group Position
 ```php
